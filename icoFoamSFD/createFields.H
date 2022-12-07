@@ -19,6 +19,8 @@ dimensionedScalar nu
     transportProperties.lookup("nu")
 );
 
+scalar rDelta = readScalar( transportProperties.lookup("Xi"));
+
 dimensionedScalar Xi
 (
     "Xi",
@@ -27,7 +29,7 @@ dimensionedScalar Xi
 );
 
 
-scalar rDelta = 0.5;
+//scalar rDelta = 0.5;
 
 Info<< "Reading field p\n" << endl;
 volScalarField p
