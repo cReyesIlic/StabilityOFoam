@@ -13,6 +13,16 @@ Steps for compiling
 
 Solver icoFOAM based to calculate the base flow for stability analysis using selective frequency damping (SFD). It is necessary to define in transportProperties dictionary the valu of $\chi$ and rDelta (parameter of SFD).
 
+#### Case Re = 100
+
+Complete damping: $\chi = 0.5$, $1/\Delta = 0.5$
+
+![alt text](https://github.com/cReyesIlic/StabilityOFoam/blob/main/img/Xi_rDelta05.png?raw=true)
+
+Partial damping: $\chi = 2$, $1/\Delta = 0.5$
+
+![alt text](https://github.com/cReyesIlic/StabilityOFoam/blob/main/img/rDelta2Xi05.png?raw=true)
+
 ### icoFOAMLNS
 
 solver icoFOAM based which calculate the perturbation velocity by Linearized Navier Stokes,
