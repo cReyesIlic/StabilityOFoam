@@ -27,7 +27,15 @@ Partial damping: $\chi = 2$, $1/\Delta = 0.5$
 
 solver icoFOAM based which calculate the perturbation velocity by Linearized Navier Stokes,
 
-## Linear Stability Analysis - Jacobian Free Method
+## Time-stepper approach
+
+The system linearizated can be expressed as
+
+$\frac{\partial u'}{t}  =Au'$
+
+where $A$ is the projected Jacobian operator. A solution for this problem corresponds to $u'(\Delta t) = u'_0 e^{A\Delta t} = u'(\Delta t)B$, where $e^{A\delta t}$ is called the exponential propagator where matrix A eigenpairs is related to B matrix eigenpairs by $\Lambda = \log(\Sigma)/\Delta t$ and $V = V_e$, where $V_e$ is obtained from the Hessenberg Matrix obtained by a Arnoldi iteration.
+
+## Linear Stability Analysis - Jacobian Free Method- Hessenberg Matrix
 
 To calculate the H matrix (size m x m, with m and user-specified parameter) it is necessary to follow the next steps:
 
@@ -38,6 +46,9 @@ Begin Iteration k = 0:
   
 After $m$ iteration, it is possible calculate the $H$ eigenvalues. Finally the eigenvalues are scaled using the $\lambda_i = -log(\sigma_i)/T$. To reconstruct the eigenvector it is necessary to ise the columns of $H$ matrix.
 
+## Example 1 : Cylinder wake Re = 40
+
+## Example 2: Cylinder wake Re = 100
 
 
 
