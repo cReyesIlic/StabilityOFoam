@@ -9,7 +9,7 @@ Steps for compiling
 2. Compiling icoFOAMSFD solver
 3. Compiling icoFOAMLNS solver
 
-The OF implementation is based on paper fond on https://www.sciencedirect.com/science/article/pii/S1000936116300024.
+The OF implementation is based on paper found on https://www.sciencedirect.com/science/article/pii/S1000936116300024.
 
 ### icoFOAMSFD solver
 
