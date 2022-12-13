@@ -9,6 +9,8 @@ Steps for compiling
 2. Compiling icoFOAMSFD solver
 3. Compiling icoFOAMLNS solver
 
+The OF implementation is based on paper fond on https://www.sciencedirect.com/science/article/pii/S1000936116300024.
+
 ### icoFOAMSFD solver
 
 Solver icoFOAM based to calculate the base flow for stability analysis using selective frequency damping (SFD). It is necessary to define in transportProperties dictionary the valu of $\chi$ and rDelta (parameter of SFD).
