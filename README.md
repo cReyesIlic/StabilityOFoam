@@ -46,9 +46,13 @@ Begin Iteration k = 0:
   
 After $m$ iteration, it is possible calculate the $H$ eigenvalues. Finally the eigenvalues are scaled using the $\lambda_i = -log(\sigma_i)/T$. To reconstruct the eigenvector it is necessary to ise the columns of $H$ matrix.
 
-## Example 1 : Cylinder wake Re = 40
+## Example 1 : Cylinder wake Re = 40 (Stable case)
 
-## Example 2: Cylinder wake Re = 100
+https://github.com/cReyesIlic/StabilityOFoam/blob/main/img/Re40.png
+![alt text](https://github.com/cReyesIlic/StabilityOFoam/blob/main/img/Re40.png?raw=true)
+
+## Example 2: Cylinder wake Re = 100 (Unstable case)
+![alt text](https://github.com/cReyesIlic/StabilityOFoam/blob/main/img/Re100.png?raw=true)
 
 
 
