@@ -33,7 +33,7 @@ solver icoFOAM based which calculate the perturbation velocity by Linearized Nav
 
 The system linearizated can be expressed as
 
-$\frac{\partial u'}{t}  =Au'$
+$\frac{\partial u'}{\partial t}  =Au'$
 
 where $A$ is the projected Jacobian operator. A solution for this problem corresponds to $u'(\Delta t) = u'_0 e^{A\Delta t} = u'(\Delta t)B$, where $e^{A\delta t}$ is called the exponential propagator where matrix A eigenpairs is related to B matrix eigenpairs by $\Lambda = \log(\Sigma)/\Delta t$ and $V = V_e$, where $V_e$ is obtained from the Hessenberg Matrix obtained by a Arnoldi iteration.
 
